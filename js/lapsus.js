@@ -9,6 +9,12 @@
  * http://evandroeisinger.com
  */
 
-window.Lapsus = (function() {
+Lapsus = (function() {
+
+	this.addEventListener( 'error', function( response ){
+	    
+	    return false;
+	
+	});
 
 }());
