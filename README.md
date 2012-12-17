@@ -3,7 +3,6 @@
 A simple JavaScript error report application integrated with Google Analytics.
 
 * Source: [https://github.com/evandroeisinger/lapsus](https://github.com/evandroeisinger/lapsus)
-* Homepage: [http://evandroeisinger.com/lapsus](http://evandroeisinger.com/lapsus)
 
 ### Usage
 
