@@ -9,12 +9,22 @@
  * http://evandroeisinger.com
  */
 
-Lapsus = (function() {
+ window.Lapsus = ( function( application, undefined ){
 
-	this.addEventListener( 'error', function( response ){
+ 	// create application error listener
+	application.addEventListener( 'error', function( response ){
 	    
+	    // get erros reponse
+	    var message = event.message,
+	    	file    = response.filename,
+	    	line    = response.lineno;
+
+	    // validate _gaq object and push error
+ 		window._gaq && typeof window._gaq === 'array' ? _gaq.push(['_trackEvent', 'Errors', message, file, line ]) : false;
+ 		
+ 		// show error on console
 	    return false;
 	
 	});
 
-}());
+})( window );
