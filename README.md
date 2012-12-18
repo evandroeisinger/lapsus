@@ -6,11 +6,11 @@ A simple JavaScript error report application integrated with Google Analytics.
 
 ### Usage
 
-It's easy to use, just setup your Google Analytics and insert Lapsus.js.
+It's easy to use, just setup your Google Analytics and insert Lapsus.js into your project.
 
-``` js
+``` html
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!-- Google Analytics: change UA-XXXXX-X to your site's ID. -->
 <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
