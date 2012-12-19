@@ -20,7 +20,7 @@
 	    	line    = response.lineno;
 
 	    // validate _gaq object and push error
- 		window._gaq && typeof window._gaq === 'array' ? _gaq.push(['_trackEvent', 'Errors', message, file, line ]) : false;
+ 		application._gaq ? _gaq.push(['_trackEvent', 'Errors', message, file, line ]) : false;
  		
  		// show error on console
 	    return false;
